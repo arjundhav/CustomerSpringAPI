@@ -1,0 +1,24 @@
+## Testing Using Postman Tool
+1. Open Postman and create a new request.
+2. Set the HTTP method to GET and the URL to http://localhost:8080/api/customers.
+3. Click Send to make the request to the server. The response should contain a JSON array of customers.
+4. To test adding a new customer, set the HTTP method to POST and the URL to http://localhost:8080/api/addcustomer 
+   In body tab,select raw option and set body to JSON object representing new customer, 
+   for example: 
+          {
+            "name": "Bob Smith",
+            "email": "bob@example.com"
+          }
+5. Click Send to make the request to the server. The response should contain the newly created customer with a generated ID.
+6. To test updating a customer, set the HTTP method to PUT and the URL to http://localhost:8080/api/updatecustomer/{id},
+   where {id} is the ID of the customer to be updated. In the body tab, select the raw option and set the body to a JSON object representing the updated customer
+   For ex:
+           {
+             "name": "Bob Smith",
+             "email": "newemail@example.com"
+            }
+
+7. Click Send to make the request to the server. The response should contain the updated customer with the new email address.
+8. To test deleting a customer, set HTTP method to DELETE and the URL to 
+   http://localhost:8080/api/customers/{id}, where {id} is the ID of the customer to be deleted.
+9. Click Send to make the request to the server. The response should have a status code of 204, indicating that the customer was successfully deleted.
