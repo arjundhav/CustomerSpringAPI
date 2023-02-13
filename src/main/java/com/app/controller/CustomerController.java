@@ -1,3 +1,5 @@
+// It handles incoming HTTP requests to the API endpoints. 
+
 package com.app.controller;
 
 import java.util.List;
