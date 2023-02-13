@@ -7,8 +7,12 @@ import jakarta.persistence.Id;
 
 @Entity
 public class Customer {
+//primary key of current entity
 @Id
+
+//specify how the primary key should be generated
 @GeneratedValue(strategy = GenerationType.AUTO)
+
 private int custId;
 private String custName;
 private String custAddress;
