@@ -11,3 +11,5 @@ public interface customerRepository extends JpaRepository<Customer, Integer>{
 	Customer findBycustName(String custName);
 
 }
+
+// Repository Class  is used to indicate that the class provides the mechanism for storage, retrieval, update, delete and search operation on objects.
