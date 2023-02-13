@@ -1,3 +1,7 @@
 DTO: Data Transfer Object (DTO) is an object that carries data between processes.
+     DTO should only contain private fields for your data,getters,setters & constructors.
+     It is not recommended to add business logic methods into DTO.
+
 
 DAO: Data Access Object is responsible for hiding implementation & how data is stored & retrieved.     
+     It encapsulates logic for retrieving, saving and updating data in your data storage(DB,file-system,whatever).
