@@ -1,0 +1,49 @@
+# Spring MVC: 
+  1.Model: A Model represents the data and business logic of the application.
+           In Spring Boot,Model is typically a POJO (Plain Old Java Object) class that encapsulates the data and methods related to that data.
+           The Model is used by the Controller to process the user's requests and send the response back to the client.
+
+  2.View: A View is responsible for rendering the data from the Model to the user.
+          In Spring Boot, the View is typically a template file that contains placeholders for the data. 
+          The View is rendered by the server and sent to the client as an HTML page.
+
+  3.Controller: A Controller is responsible for processing the user's requests and returning the appropriate response.
+                In Spring Boot, the Controller is a Java class that handles the incoming HTTP requests and sends the data to the View for rendering.
+
+  4.Repository: A Repository is responsible for interacting with the database and performing CRUD (Create, Read, Update, Delete) operations on the data.
+                In Spring Boot, the Repository is an interface that extends one of the Spring Data repository interfaces (e.g., JpaRepository).
+
+  5.DOA & DTO: 
+    Data Access Object (DAO): 
+          The DAO layer is responsible for interacting with the database or other data storage systems. 
+          It typically provides CRUD (Create, Read, Update, Delete) operations to perform data access, and hides the implementation details of the underlying storage mechanism from the rest of the application.
+          The DAO layer typically uses Spring's JdbcTemplate or an ORM (Object-Relational Mapping) framework such as Hibernate to interact with the database.
+
+     Data Transfer Object (DTO): 
+          The DTO layer is responsible for transferring data between different layers of the application. 
+          It is used to encapsulate data that needs to be transferred between the Service and Controller layers, or between different microservices in a distributed application. 
+          The DTO is typically a simple POJO (Plain Old Java Object) that contains the necessary data and does not contain any business logic.
+
+ 6.Service layer: 
+          The Service layer is responsible for implementing the business logic of the application. It acts as an intermediary between the Controller and DAO layers.
+          It contains methods that implement the application's business rules. 
+          The Service layer typically makes use of the DAO layer to interact with the database, and can also make use of other services or APIs to perform complex operations.
+
+
+## Steps to Create an API
+
+Step1: Create a Spring Boot project: Use Spring Initializr to create a new Spring Boot project. Add the necessary dependencies for building REST APIs, such as Spring Web and Spring Data JPA.
+
+Step2: Define the model: Create a Java class to represent the resource you want to manage. This class should have the necessary attributes and methods to store and manipulate data.
+
+Step3: Define the repository: Create a Spring Data JPA repository interface to define the CRUD operations for the model class. This interface should extend the JpaRepository interface.
+
+Step4: Define the controller: Create a Spring MVC controller class to handle incoming HTTP requests to the API endpoints. The controller class should use the repository to retrieve and manipulate data.
+
+Step5: Implement the API endpoints: Implement the methods in the controller class to handle the HTTP requests for the API endpoints. These methods should map to the appropriate HTTP verbs (GET, POST, PUT, DELETE) and use the repository to interact with the data.
+
+Step6: Test the API: Use tools like Postman to test the API endpoints and ensure that the CRUD operations are working as expected.
+
+Step7: Add security: Depending on the application, you may need to add security to the API using Spring Security or another authentication and authorization framework.
+
+Step8: Deploy the API: Deploy the API to a production environment, such as a cloud platform or on-premises server, and configure it for performance and scalability.
