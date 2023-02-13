@@ -13,3 +13,4 @@ public interface customerRepository extends JpaRepository<Customer, Integer>{
 }
 
 // Repository Class  is used to indicate that the class provides the mechanism for storage, retrieval, update, delete and search operation on objects.
+// Before implementing the Repository class we have created a generic DemoRepository interface to provide the contact for our repository class to implement.
