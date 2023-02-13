@@ -56,3 +56,5 @@ public String toString() {
 }
 
 }
+
+// This is a simple POJO(Plain Old Java Object) class in java. 
