@@ -5,6 +5,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+//a class can be mapped to a table.
 @Entity
 public class Customer {
 //primary key of current entity
