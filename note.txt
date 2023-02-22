@@ -29,6 +29,9 @@
           It contains methods that implement the application's business rules. 
           The Service layer typically makes use of the DAO layer to interact with the database, and can also make use of other services or APIs to perform complex operations.
 
+#JPA: 
+    Hibernate is an implementation of JPA and uses common standards of Java Persistence API. It is the standard API that allows developers to perform database operations smoothly. It is used to map Java data types with database tables and SQL data types.
+  The main advantage of JPA over JDBC for developers is that they can code their Java applications using object-oriented principles and best practices without having to worry about database semantics.
 
 ## Steps to Create an API
 
